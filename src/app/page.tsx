@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from './components/Card'
+import ProgressBar from './components/ProgressBar'
 const Home = () => {
   return (
     <>
@@ -13,13 +14,57 @@ const Home = () => {
       </style>
 
 
-      <div className='min-h-screen'>
+      <div className=''>
         <div className='relative'>
-          <Image src="/1.png" alt="cover" width={1300} height={500} className='p-4 w-full rounded-3xl max-h-[300px] object-contain' />
-          <Image src="/pp.png" alt="profile" width={200} height={200} className='absolute left-1/2 top-[75%] -translate-x-1/2 ' />
+          <Image
+            src="/1.png"
+            alt="cover"
+            width={1300}
+            height={500}
+            className='p-4 w-full rounded-3xl max-h-[300px] object-contain'
+          />
+          <Image
+            src="/pp.png"
+            alt="profile"
+            width={200}
+            height={200}
+            className='absolute left-1/2 top-[75%] -translate-x-1/2 '
+          />
         </div>
       </div>
-      <div className='flex justify-between w-[90%] mx-auto gap-y-8 flex-wrap'>
+      <h2 className="text-3xl font-bold w-[90%] mx-auto pt-20">Skills</h2>
+      <div className='w-[90%] mx-auto pb-10'>
+        <div className='mt-4'></div>
+        <ProgressBar title="HTML" percent={90} />
+
+        <div className='mt-4'></div>
+        <ProgressBar title="CSS" percent={70} />
+        <div className='mt-4'></div>
+        <ProgressBar title="JS" percent={60} />
+        <div className='mt-4'></div>
+        <ProgressBar title="React" percent={75} />
+        <div className='mt-4'></div>
+        <ProgressBar title="Next JS" percent={60} />
+        <div className='mt-4'></div>
+        <ProgressBar title="Node JS" percent={60} />
+
+        <div className='mt-4'></div>
+        <ProgressBar title="Express JS" percent={60} />
+
+        <div className='mt-4'></div>
+        <ProgressBar title="MongoDB" percent={55} />
+
+        <div className='mt-4'></div>
+        <ProgressBar title="MySQL" percent={50} />
+
+
+
+      </div>
+
+
+
+      <h2 className="text-3xl font-bold w-[90%] mx-auto">Projects</h2>
+      <div className=' flex justify-between w-[90%] mx-auto gap-y-8 flex-wrap'>
         <Card
           title='Lets Assess'
           technologies={["React JS", "Node JS", "Typescript", "Express JS", "MongoDB"]}
@@ -74,6 +119,13 @@ const Home = () => {
           technologies={["Next JS 13.4", "Next Auth"]}
           img="/library.png"
           link='https://component-library-orcin.vercel.app/'
+        />
+
+        <Card
+          title='Resume'
+          technologies={["React JS"]}
+          img="/portfolio.png"
+          link='https://pramodpant.netlify.app/'
         />
 
 
