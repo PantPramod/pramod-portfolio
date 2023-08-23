@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
     return (
-        <a className="mt-10 w-[700px] mx-auto " href="https://medium.com/@pramodpant100/how-to-master-javascript-within-30-days-2e9b28ea98ba" target='_blank'>
+        <a className="block mt-10 w-[700px] mx-auto " href="https://medium.com/@pramodpant100/how-to-master-javascript-within-30-days-2e9b28ea98ba" target='_blank'>
             <p className='text-xs text-gray-700'>Aug 20, 2022</p>
             <div className='mt-2 flex  gap-x-8'>
                 <div className=''>

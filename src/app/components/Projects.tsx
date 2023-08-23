@@ -1,10 +1,11 @@
 import React from 'react'
 import Card from './Card'
+import Heading from './Heading'
 
 const Projects = () => {
     return (
         <div>
-            <h2 className="text-3xl font-bold w-[90%] mx-auto mb-10 mt-20 text-center">Projects</h2>
+            <Heading>Projects</Heading>
             <div className=' flex justify-between w-[90%] mx-auto gap-y-8 flex-wrap'>
                 <Card
                     title='Lets Assess'
@@ -68,7 +69,12 @@ const Projects = () => {
                     img="/portfolio.png"
                     link='https://pramodpant.netlify.app/'
                 />
-
+                <Card
+                    title="Spread Cards"
+                    technologies={["React JS", "Typescript", "MongoDB", "Node JS", "Express JS"]}
+                    img="/spreadcard.png"
+                    link='https://spreadcard.netlify.app'
+                />
 
 
 

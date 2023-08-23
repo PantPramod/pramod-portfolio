@@ -1,10 +1,11 @@
 import React from 'react'
 import Blog from './Blog'
+import Heading from './Heading'
 
 const Blogs = () => {
   return (
     <div className='mt-20 w-[90%] mx-auto'>
-      <h2 className='text-3xl font-bold text-center uppercase'>Blogs</h2>
+     <Heading>Blogs</Heading>
 
    <Blog/>
    <Blog/>
